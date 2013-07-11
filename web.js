@@ -4,14 +4,10 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World3!');
-  //fs.readFileSync('index.html', 'utf8', function (err, data) {
-  //  if (err) throw err;
-  //  console.log(data);
-  //  response.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
-  //  response.write(data);
-  //  response.end();
-  //});  
+  //console.log('reading file... \n');
+  fs.readFile('./index.html', 'utf8', function (err, data) {
+    response.send(data);
+  });  
 });
 
 var port = process.env.PORT || 5000;
