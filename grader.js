@@ -71,16 +71,17 @@ if(require.main == module) {
         .parse(process.argv);
 
     if (program.url) {
-        var myURL=program.url + "/index.html";
-        console.log("Running process with input URL... \n\t" + myURL);
+        var myURL=program.url;
+        //console.log("Running process with input URL... \n\t" + myURL);
 	rest.get(myURL).on('complete', function(data) {
-	   console.log(data);
+	   fs.writeFileSync('./temp.html', data);
+	   console.log("Wrote data to temp.html");
+	   program.file = './temp.html';
 	});
-    } else {
-        console.log("No URL");
-	var checkJson = checkHtmlFile(program.file, program.checks);
-        var outJson = JSON.stringify(checkJson, null, 4);
     }
+    var checkJson = checkHtmlFile(program.file, program.checks);
+    var outJson = JSON.stringify(checkJson, null, 4);
+
     console.log(outJson);
 } else {
     exports.checkHtmlFile = checkHtmlFile;
