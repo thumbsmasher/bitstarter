@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Service Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -42,7 +42,9 @@
 
     /* Main body and headings */
       body {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+			background-image:url('bg1.gif');
+			background-repeat:repeat-x;
       }
       .heading, .subheading {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -104,8 +106,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
        <div class="navbar-inner">
 	  <div class="container">
-	     <button type="button" class="btn btn-navbar"
-		data-toggle="collapse" data-target=".nav-collapse">
+	     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -130,88 +131,95 @@
       <!-- www.google.com/fonts/specimen/Ubuntu --> 
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
-        <div class="span12">
-	   <h1>Product</h1>
-	</div>
+        	<div class="span14">
+	   		<h1>Service Manager</h1>
+			</div>
       </div>
       <div class="row-fluid subheading">
-	<div class="span12">
-	   <!-- Special typography from Bootstrap for lead paragraph. -->
-	   <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	   <p class="lead">One sentence description.</p>
-      </div>      
-      <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	   <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+			<div class="span14">
+	   		<!-- Special typography from Bootstrap for lead paragraph. -->
+	   		<!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+	   		<p class="lead">Let everyone know when and where you've been treated well... and not so well...</p>
+      	</div>      
+      	<div class="row-fluid pitch">
+				<div class="span5 offset1 video">
+	   			<img class="img-polaroid" width="480" height="300" src="http://img5.foodservicewarehouse.com/education/images/operations/service.gif">
+				</div>
 
-	<!-- We define a new 'actions' div to contain statistics, order, and share buttons -->
-	<div class="span5 actions">
-	   <div class="span8 offset2">
-	      <div class="statistics">
-	        <div class="span4">
-		  <!-- linediv-l and linediv-r give dividing lines that look
-			different in horizontal and vertical layouts, illustrating
-			media queries -->
-		  <div class="linediv-l">
-		    <h3>1000</h3> <p>backers</p>
-		  </div>
-		</div>
-	        <div class="span4">
-		  <div class="linediv-c">
-		    <h3>$6000</h3> <p>of $10,000</p>
-		  </div>
-		</div>
-	        <div class="span4">
-		  <div class="linediv-r">
-		    <h3>10</h3> <p>days left</p>
-		  </div>
-		</div>
-	      </div>
-	   </div>
-	   <div class="span10 offset1">
-	     <!-- Bootstrap progress bar -->
-	     <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-	     <div class="thermometer progress active">
-		<div class="bar bar-success" style="width: 60%"></div>
-		<div class="bar bar-warning" style="width: 40%"></div>
-	     </div>
-	   </div>
-	   <div class="span6 offset3 order">
-	     <!-- Standard Bootstrap button -->
-	     <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	     <button class="btn btn-success btn-large">Preorder</button>
-	   </div>
-	   <div class="span8 offset2 social">
-	     <!-- Social buttons are not included in default Bootstrap -->
-	     <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-	     <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	     <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-	   </div>
-	</div>
- </div>
+				<!-- We define a new 'actions' div to contain statistics, order, and share buttons -->
+				<div class="span5 actions">
+				   <div class="span8 offset2">
+	     			 	<div class="statistics">
+	       	 			<div class="span4">
+		  					<!-- linediv-l and linediv-r give dividing lines that look
+							different in horizontal and vertical layouts, illustrating
+							media queries -->
+		  						<div class="linediv-l">
+		    						<h3>1000</h3> <p>backers</p>
+		  						</div>
+							</div>
+	      				<div class="span4">
+		  						<div class="linediv-c">
+		    						<h3>$6000</h3> <p>of $10,000</p>
+		  						</div>
+							</div>
+	        				<div class="span4">
+		  						<div class="linediv-r">
+		    						<h3>10</h3> <p>days left</p>
+		 			 			</div>
+							</div>
+	      			</div>
+	   			</div>
+	   			<div class="span10 offset1">
+	     				<!-- Bootstrap progress bar -->
+	     				<!-- http://twitter.github.io/bootstrap/components.html#progress -->
+	     				<div class="thermometer progress active">
+							<div class="bar bar-success" style="width: 60%"></div>
+								<div class="bar bar-warning" style="width: 40%"></div>
+	     				</div>
+	   			</div>
+	   			<div class="span6 offset3 order">
+	     			<!-- Standard Bootstrap button -->
+	     			<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+	     				<button class="btn btn-success btn-large">Preorder</button>
+	   			</div>
+	   			<div class="span8 offset2 social">
+	     			<!-- Social buttons are not included in default Bootstrap -->
+	     			<!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+	     				<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	     				<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	   			</div>
+				</div>
+ 			</div>
 
-<!-- Beyond this part the marketing copy begins. -->
+		<!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" width="480" height="300" src="http://1.bp.blogspot.com/-gbMOYEV7FOo/TuZ2lxpEvJI/AAAAAAAAAHg/Ii4myut_D-g/s320/KNG111_PHOTO-Tip-Credit-Industry-Practices-There-Is-No-Safety-in-Numbers.jpg">
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            Have you ever gone to a restaurant and had a great experience, only
+            to go back to the same restaurant to have a lousy one? Service in the
+            service industry (wait staff, grocery clerks, receptionists) are the 
+            front line of any business. Businesses with great customer service keep
+            customers coming back for more. <b>Service Manager</b> ties into your social network 
+            (Facebook, Google+, Twitter) and provides you an opportunity to compliment 
+            good service or call out poor service. It also integrates with Open Table, 
+            SpotOn, Yelp, and other service-recommending feeds. All you do is scan 
+            the QR code on your checkout ticket, or your server's name badge with 
+            the app and submit your rating.
+          </p>
+          <p>
+          	<ul>
+					<li>Save your server to a favorites list. </li>
+          		<li>Get recommendations from your Facebook friends on servers.</li>
+          		<li>Tip calculator build-in app. </li>
+          		<li>Integrated with OpenTable, SpotOn, Yelp to request a particular server</li>
+          	</ul>
           </p>
         </div>
       </div>
@@ -219,21 +227,25 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            <b>For Businesses.</b> Service Manager can also be used by businesses to 
+            track, real time or historically, how their staff are serving their customers.
+          </p>
+          <p>
+          	What's Free?
+          	<ul>
+					<li>Basic listing of feedback and comments</li>
+          	</ul>
+          </p>
+          <p>
+          	Subscription services...
+          	<ul>
+					<li>Email notifications and push messages about bad reviews</li>
+					<li>Review comments, post favourable reviews to online review sites like Yelp</li>
+          	</ul>
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" width="480" height="300" src="http://static5.businessinsider.com/image/4ee22bcfeab8ea7c57000025-480/credit-card-waiter-restaurant-server-paying.jpg">
         </div>
       </div>
 
@@ -279,10 +291,9 @@
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
+          <p>
+          	This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+            By-SA 3.0 </a>, without all the cruft that would otherwise be
             put at the bottom of the page.</p>
         </div>
       </div>
